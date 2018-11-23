@@ -25,7 +25,7 @@ class Bianchi:
         # prop_delay: Propagation delay in seconds
         #
         # OUTPUT:
-        # S: normalized throughput
+        # S: normalized system throughput, defined as the fraction of time the channel is used to successfully transmit payload bits.
         # p: the probability of a collision seen by a packet being transmitted on the channel
         # t: the probability that a station transmits in a randomly chosen slot time
         # Ps: the probability that a transmission occurring on the channel is successful is given by the probability that exactly one station transmits on the channel, conditioned on the fact that at least one station transmits
@@ -197,8 +197,8 @@ if __name__ == "__main__":
 
             plt.plot(nn, S, label="W = %d m = %d" % (W, m), marker=marker, c='k', markerfacecolor='w')
 
-    ax.set_xlabel("nodes")
-    ax.set_ylabel("received (bytes)")
+    ax.set_xlabel("Number of Stations")
+    ax.set_ylabel("Saturation Throughput")
 
     leg = plt.legend(loc='best', fancybox=True, prop={'size': 12})
     frame = leg.get_frame()
