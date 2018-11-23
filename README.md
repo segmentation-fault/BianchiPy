@@ -6,3 +6,5 @@ doi: 10.1109/49.840210
 
 ## Usage
 Please refer to the main in calculate_bianchi_tr.py
+
+Needs scipy and matplotlib installed
