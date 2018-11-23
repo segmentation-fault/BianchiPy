@@ -18,7 +18,7 @@ class Bianchi:
         # slot: slot duration in seconds
         # DIFS: DIFS duration in seconds
         # E_P: average packet payload size in bits
-        # E_P_star:  average  length  of  the  longest  packetpayload involved in a collision in bit (for an example, see eq. 16 in the paper)
+        # E_P_star:  average  length  of  the  longest packet payload involved in a collision in bit (for an example, see eq. 16 in the paper)
         # W: Minimum contention window size in slots
         # m: Retry limit
         # H: Header size in bits
